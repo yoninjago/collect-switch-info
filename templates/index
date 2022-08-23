@@ -1,0 +1,3 @@
+Template, Hostname, Vendor, Command
+sh_ip_int_br.template, .*, cisco_ios, sh[[ow]] ip int[[erface]] br[[ief]]
+sh_version.template, .*, cisco_ios, sh[[ow]] ver[[sion]]

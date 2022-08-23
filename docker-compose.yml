@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+
+  script:
+    container_name: collect_switch_info
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - files:/app/files/
+      - logs:/app/logs/
+    env_file:
+      - ./.env
+
+volumes:
+  files:
+    name: files
+  logs:
+    name: logs
